@@ -18,7 +18,7 @@ class ApiService {
 
   Future<String> sendChatRequest(String question) async {
     final data = {
-      "model": "claude-3-opus-20240229",  // or other Claude models
+      "model": "claude-3-5-sonnet-20241022",  // or other Claude models
       "max_tokens": 1024,
       "messages": [
         {"role": "user", "content": question}
